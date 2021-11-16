@@ -17,7 +17,7 @@
     <script src="three.js"></script>
     <script type="module" src="GLTFLoader.js"></script>
     <script type="module">
-      import { GLTFLoader } from "./GLTFLoader.js";
+      import { GLTFLoader } from "GLTFLoader.js";
 
       var scene = new THREE.Scene();
 
@@ -40,7 +40,7 @@
       });
 
 var obj2;
-      loader.load("cube.glb", function (gltf) {
+      loader.load("dog.glb", function (gltf) {
         obj2 = gltf.scene;
         obj2.position.x=20;
         obj2.scale.set(10,10,10)
