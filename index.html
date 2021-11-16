@@ -27,7 +27,7 @@
         0.01,
         1000
       );
-      var renderer = new THREE.WebGLRenderer();
+      var renderer = new THREE.WebGLRenderer(antialias: true);
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
 
@@ -64,7 +64,7 @@ var obj2;
       animate();
     </script>
     <p>
-      yo1
+      yo12
       <p>
   </body>
 </html>
