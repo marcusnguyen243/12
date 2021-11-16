@@ -27,7 +27,7 @@
         0.01,
         1000
       );
-      var renderer = new THREE.WebGLRenderer(antialias: true);
+      var renderer = new THREE.WebGLRenderer({antialias: true});
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
 
