@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css"/>
     <title>3d model</title>
     <style>
       body {
-        margin: 0;
+        margin: auto;
+   
       }
       canvas {
         display: block;
@@ -57,8 +57,8 @@ var obj2;
  var obj3;
       loader.load("orbit1.gltf", function (gltf) {
         obj3 = gltf.scene;
-        obj3.scale.set(1.5,1.5,1.5);
-        obj3.position.y =20;
+        obj3.scale.set(1.2,1.2,1.2);
+        obj3.position.y =15;
         obj3.position.z =15;
         obj3.position.x =-5;
       scene.add(gltf.scene);
@@ -67,8 +67,8 @@ var obj2;
  var obj4;
       loader.load("orbit2.gltf", function (gltf) {
         obj4 = gltf.scene;
-        obj4.scale.set(1.5,1.5,1.5);
-        obj4.position.y =20;
+        obj4.scale.set(1.2,1.2,1.2);
+        obj4.position.y =15;
         obj4.position.z =15;
       scene.add(gltf.scene);
       });
@@ -95,7 +95,7 @@ var obj2;
       Fractal Crystals: Orbiting Wireframes
     </h1>
     <p>
-    YUEAG
+g
       <p>
   </body>
 </html>
