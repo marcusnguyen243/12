@@ -16,9 +16,9 @@ body {
 
 .statementp {
   margin: auto;
-  left-padding: 200px;
-  right-padding: 200px;
+  width:50%
+  text-align: center;
   color:white;
-  background-color: green;
+  border: 3px solid white;
 }
 
