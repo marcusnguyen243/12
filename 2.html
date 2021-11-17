@@ -49,7 +49,7 @@
 var obj2;
       loader.load("smallorb1.gltf", function (gltf) {
         obj2 = gltf.scene;
-        obj2.position.x=5;
+        obj2.position.x=0;
          obj2.position.y=13;
         obj2.scale.set(1,1,1);
       scene.add(gltf.scene);
@@ -81,7 +81,7 @@ var obj2;
       loader.load("smallorb1.gltf", function (gltf) {
         obj4 = gltf.scene;
         obj4.scale.set(.4,.4,.4);
-        obj4.position.x =5;
+        obj4.position.x =2;
         obj4.position.y =10;
         obj4.position.z =15;
       scene.add(gltf.scene);
@@ -95,7 +95,8 @@ var obj2;
         requestAnimationFrame(animate);
         obj.rotation.y += 0.001;
         //obj.position.x +=.005;
-        obj2.rotation.y += 0.005;
+        obj2.rotation.y += 0.002;
+        obj2.rotation.x += 0.001;
         obj3.rotation.y += 0.009;
        //obj3.position.x +=.005;
         obj4.rotation.y += 0.005;
