@@ -69,7 +69,7 @@ var obj2;
   var obj5;
       loader.load("smallorb2.gltf", function (gltf) {
         obj5 = gltf.scene;
-        obj5.scale.set(.8,.8,.8);
+        obj5.scale.set(.5,.5,.5);
         obj5.position.y =20;
         obj5.position.z =15;
         obj5.position.x =-3;
@@ -87,7 +87,7 @@ var obj2;
       });
 
       scene.background = new THREE.Color(0xffffff);
-      var light = new THREE.HemisphereLight(0xffffff, 0x000000, 7);
+      var light = new THREE.HemisphereLight(0xffffff, 0x000000, 6);
       scene.add(light);
       camera.position.set(0, 10, 40);
       function animate() {
@@ -95,7 +95,7 @@ var obj2;
         obj.rotation.y += 0.001;
         //obj.position.x +=.005;
         obj2.rotation.y += 0.005;
-        obj3.rotation.y += 0.005;
+        obj3.rotation.y += 0.009;
        //obj3.position.x +=.005;
         obj4.rotation.y += 0.005;
         //obj4.position.x +=.005;
