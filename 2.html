@@ -78,10 +78,11 @@ var obj2;
  
       
  var obj4;
-      loader.load("orbit2.gltf", function (gltf) {
+      loader.load("smallorb1.gltf", function (gltf) {
         obj4 = gltf.scene;
-        obj4.scale.set(1.2,1.2,1.2);
-        obj4.position.y =15;
+        obj4.scale.set(.4,.4,.4);
+        obj4.position.x =5;
+        obj4.position.y =10;
         obj4.position.z =15;
       scene.add(gltf.scene);
       });
@@ -98,6 +99,7 @@ var obj2;
         obj3.rotation.y += 0.009;
        //obj3.position.x +=.005;
         obj4.rotation.y += 0.005;
+        obj4.rotation.x += 0.002;
         //obj4.position.x +=.005;
         obj5.rotation.y += 0.01;
         renderer.render(scene, camera);
