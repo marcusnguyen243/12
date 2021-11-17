@@ -87,6 +87,19 @@
         //obj3.position.x =-5;
       scene.add(gltf.scene);
       });
+      
+      
+   var obj6;
+      loader.load("orbit2.gltf", function (gltf) {
+        obj4 = gltf.scene;
+        obj4.scale.set(.6,.6,.6);
+        obj4.position.y =5;
+        obj4.position.z =15;
+        obj4.position.x =-5;
+        
+        
+      scene.add(gltf.scene);
+      });
 
       scene.background = new THREE.Color(0xffffff);
       var light = new THREE.HemisphereLight(0xffffff, 0x000000, 2);
