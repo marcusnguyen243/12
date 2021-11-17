@@ -12,6 +12,7 @@
       }
       canvas {
         display: block;
+        width: 100%;
       }
     </style>
   </head>
@@ -69,7 +70,7 @@ var obj2;
       loader.load("orbit2.gltf", function (gltf) {
         obj4 = gltf.scene;
         obj4.scale.set(1,1,1);
-        obj4.position.y =29;
+        obj4.position.y =10;
         obj4.position.z =15;
         
       scene.add(gltf.scene);
