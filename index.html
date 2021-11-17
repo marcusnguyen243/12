@@ -30,7 +30,7 @@
       sal = 1;
       }
       
-      console.log(val);
+      console.log(1);
       
       var scene = new THREE.Scene();
 
@@ -69,7 +69,7 @@ var obj2;
       function animate() {
         requestAnimationFrame(animate);
         obj.rotation.y += 0.005;
-        obj.position.y =
+        obj.position.y =val;
         //obj.rotation.z += val;
         obj2.rotation.y += 0.01;
         renderer.render(scene, camera);
@@ -78,7 +78,7 @@ var obj2;
       animate();
     </script>
     <p>
-      yo3
+      yo33
       <p>
   </body>
 </html>
