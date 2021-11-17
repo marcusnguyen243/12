@@ -41,8 +41,8 @@
       var obj;
       loader.load("crystal1.gltf", function (gltf) {
         obj = gltf.scene;
-        obj.position.y=-15;
-        obj.scale.set(1.7,1.7,1.7);
+        obj.position.y=0;
+        obj.scale.set(2.5,2.5,2.5);
         scene.add(gltf.scene);
       });
 
@@ -75,7 +75,7 @@ var obj2;
       });
 
       scene.background = new THREE.Color(0xffffff);
-      var light = new THREE.HemisphereLight(0xffffff, 0x000000, 15);
+      var light = new THREE.HemisphereLight(0xffffff, 0x000000, 25);
       scene.add(light);
       camera.position.set(0, 10, 40);
       function animate() {
