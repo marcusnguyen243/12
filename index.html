@@ -39,7 +39,8 @@
       var obj;
       loader.load("asset5.gltf", function (gltf) {
         obj = gltf.scene;
-        obj.scale.set(2,2,2);
+        obj.position.y=5;
+        obj.scale.set(1.5,1.5,1.5);
         scene.add(gltf.scene);
       });
 
@@ -54,8 +55,7 @@ var obj2;
       
  var obj3;
       loader.load("orbit1.gltf", function (gltf) {
-        obj2 = gltf.scene;
-        obj2.position.x=40;
+        obj3 = gltf.scene;
         //obj2.scale.set(5,5,5);
       scene.add(gltf.scene);
       });
