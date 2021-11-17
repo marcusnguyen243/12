@@ -91,11 +91,11 @@
       
    var obj6;
       loader.load("orbit2.gltf", function (gltf) {
-        obj4 = gltf.scene;
-        obj4.scale.set(.6,.6,.6);
-        obj4.position.y =5;
-        obj4.position.z =15;
-        obj4.position.x =-5;
+        obj6 = gltf.scene;
+        obj6.scale.set(.6,.6,.6);
+        obj6.position.y =5;
+        obj6.position.z =15;
+        obj6.position.x =-5;
         
         
       scene.add(gltf.scene);
@@ -114,6 +114,10 @@
         obj4.position.z +=.003;
         obj5.rotation.y += 0.0044;
         obj5.position.z +=.01;
+        
+       if (obj5.position.z > 40){
+        obj5.position.z = 0; 
+       }
         renderer.render(scene, camera);
       }
 
