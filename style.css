@@ -13,3 +13,9 @@ body {
   align-items:center;
   color:white;
 }
+
+.statementp {
+  margin: auto;
+  left-paddingL 200px;
+  right-padding: 200px;
+}
