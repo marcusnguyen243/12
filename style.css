@@ -2,6 +2,6 @@ body {
   font-family: "Source Code Pro", monospace;
   margin: auto;
   display: block;
-  padding: 20px;
+  left-padding: 200px;
   background-color: black;
 }
