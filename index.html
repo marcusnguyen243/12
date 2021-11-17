@@ -47,13 +47,6 @@
         scene.add(gltf.scene);
       });
 
-var obj2;
-      loader.load("dog.glb", function (gltf) {
-        obj2 = gltf.scene;
-        obj2.position.x=20;
-        obj2.scale.set(5,5,5);
-      scene.add(gltf.scene);
-      });
 
       
  var obj3;
@@ -62,6 +55,7 @@ var obj2;
         obj3.scale.set(1.2,1.2,1.2);
         obj3.position.y =10;
         obj3.position.z =20;
+        obj3.position.x =10;
         //obj3.position.x =-5;
       scene.add(gltf.scene);
       });
