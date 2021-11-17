@@ -96,6 +96,18 @@
         obj6.position.z =15;
         obj6.position.x =-5;
         
+              scene.add(gltf.scene);
+      });
+
+        
+     var obj7;
+      loader.load("orbit1.gltf", function (gltf) {
+        obj7 = gltf.scene;
+        obj7.scale.set(.6,.6,.6);
+        obj7.position.y =5;
+        obj7.position.z =15;
+        obj7.position.x =-5;
+        
         
       scene.add(gltf.scene);
       });
@@ -115,6 +127,8 @@
         obj5.position.z +=.01;
         obj6.rotation.y += 0.0054;
         obj6.position.z +=.003;
+        obj7.rotation.y += 0.0054;
+        obj7.position.x +=.003;
        if (obj5.position.z > 10){
         obj5.position.z = -30; 
        }
