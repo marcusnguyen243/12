@@ -16,9 +16,9 @@ body {
 
 .statementp {
   margin: auto;
-  width:50%
+  width:50%;
   text-align: center;
   color:white;
-  border: 3px solid white;
+  border: 1px solid white;
 }
 
