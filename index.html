@@ -19,16 +19,6 @@
     <script type="module">
       import { GLTFLoader } from "./GLTFLoader.js";
       
-      var val;
-      var sal;
-      
-      val+=.001;
-      
-//       if (val > .005 || val < .001){
-//       sal = -1;
-//       } else {
-//       sal = 1;
-//       }
       
       console.log(val);
       
@@ -69,8 +59,10 @@ var obj2;
       function animate() {
         requestAnimationFrame(animate);
         obj.rotation.y += 0.005;
-        obj.position.y =val;
-        //obj.rotation.z += val;
+        obj.position.x +=.005;
+        if (obj.position.x > 1){
+        obj.position.x = 0);
+        }
         obj2.rotation.y += 0.01;
         renderer.render(scene, camera);
       }
@@ -78,7 +70,7 @@ var obj2;
       animate();
     </script>
     <p>
-      yo332
+      yo22
       <p>
   </body>
 </html>
