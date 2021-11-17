@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3d model</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Project 3</title>
     <style>
       body {
         margin: auto;
@@ -38,7 +39,7 @@
       var loader = new GLTFLoader();
 
       var obj;
-      loader.load("asset5.gltf", function (gltf) {
+      loader.load("crystal1.gltf", function (gltf) {
         obj = gltf.scene;
         obj.position.y=-15;
         obj.scale.set(1.7,1.7,1.7);
