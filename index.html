@@ -39,7 +39,7 @@
       var obj;
       loader.load("asset5.gltf", function (gltf) {
         obj = gltf.scene;
-        obj.position.y=5;
+        obj.position.y=-10;
         obj.scale.set(1.5,1.5,1.5);
         scene.add(gltf.scene);
       });
@@ -56,7 +56,7 @@ var obj2;
  var obj3;
       loader.load("orbit1.gltf", function (gltf) {
         obj3 = gltf.scene;
-        //obj2.scale.set(5,5,5);
+        obj3.scale.set(1,1,1);
       scene.add(gltf.scene);
       });
 
@@ -77,7 +77,7 @@ var obj2;
       animate();
     </script>
     <p>
-      51
+      512
       <p>
   </body>
 </html>
